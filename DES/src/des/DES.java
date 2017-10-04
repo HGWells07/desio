@@ -5,7 +5,7 @@ import generico.Binario;
 
 /**
  *
- * @author Charly Anguiano
+ * @author Carlos G. Anguiano
  */
 public class DES {
     

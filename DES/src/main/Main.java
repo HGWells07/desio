@@ -6,11 +6,11 @@
 package main;
 
 import des.DES;
-import generico.Binario;
+import java.util.Scanner;
 
 /**
  *
- * @author OSVALDO
+ * @author Carlos G. Anguiano
  */
 public class Main {
 
@@ -19,7 +19,10 @@ public class Main {
      */
     public static void main(String[] args) {
         DES d = new DES();
-        d.generarLlaves("133457799bbcdff1");
+        System.out.println("Ingrese una clave: ");
+        Scanner s = new Scanner(System.in);
+        String clave = s.next();
+        d.generarLlaves(clave);
     }
     
 }
