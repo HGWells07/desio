@@ -7,7 +7,9 @@ import generico.ConverHex;
  *
  * @author Carlos G. Anguiano
  */
-public class DES {
+public class Llaves {
+    
+    
     
     private final int P1[] ={57,49,41,33,25,17,9,1,
                              58,50,42,34,26,18,10,2,

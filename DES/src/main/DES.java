@@ -5,20 +5,23 @@
  */
 package main;
 
-import des.DES;
+import des.Llaves;
+import des.Permutar;
 import java.util.Scanner;
 
 /**
  *
  * @author Carlos G. Anguiano
  */
-public class Main {
+public class DES {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        DES d = new DES();
+        
+        Llaves d = new Llaves();
+        
         System.out.println("Ingrese una clave: ");
         Scanner s = new Scanner(System.in);
         String clave = s.next();
