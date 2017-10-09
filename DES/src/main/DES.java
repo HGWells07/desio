@@ -7,6 +7,7 @@ package main;
 
 import des.Llaves;
 import des.Permutar;
+import des.XOR;
 import java.util.Scanner;
 
 /**
