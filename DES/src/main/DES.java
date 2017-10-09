@@ -8,6 +8,7 @@ package main;
 import des.Llaves;
 import des.Permutar;
 import des.XOR;
+import generico.ConverHex;
 import java.util.Scanner;
 
 /**

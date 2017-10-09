@@ -5,6 +5,7 @@
  */
 package generico;
 
+import java.math.BigInteger;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -15,7 +16,18 @@ import java.util.Map;
 
 public class ConverHex {
     
-    private final Map<Character, String> hexDic = new HashMap<Character, String>()
+    public String hexadecimalABinario(String hex){
+        String value = new BigInteger(hex, 16).toString(2);
+        return String.format("%64s", value).replace(" ", "0");
+    }
+}
+
+/*
+=======================================================
+VERSIONES PASADAS
+=======================================================
+
+private final Map<Character, String> hexDic = new HashMap<Character, String>()
     {{
          put('0', "0000");
          put('1', "0001");
@@ -49,4 +61,4 @@ public class ConverHex {
         } 
         return res;
     }
-}
+*/
