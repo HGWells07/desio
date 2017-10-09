@@ -1,7 +1,7 @@
 
 package des;
 
-import generico.Binario;
+import generico.ConverHex;
 
 /**
  *
@@ -32,7 +32,7 @@ public class DES {
     public String generarLlaves(String clave){
         String llaves = "";
         //Obteniendo clave en binario
-        Binario b = new Binario();
+        ConverHex b = new ConverHex();
         String bin = b.hexadecimalABinario(clave);
         //System.out.println(bin);
         

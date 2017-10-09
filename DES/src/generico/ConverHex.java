@@ -13,7 +13,7 @@ import java.util.Map;
  * @author Carlos G. Anguiano
  */
 
-public class Binario {
+public class ConverHex {
     
     private final Map<Character, String> hexDic = new HashMap<Character, String>()
     {{
