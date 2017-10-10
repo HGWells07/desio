@@ -42,11 +42,11 @@ public class Llaves {
     }
     
     public String recorrimiento(String pc1, int lugares){
-        String r1, r2, res = "";
+        String r1, r2, res;
         r1 = pc1.substring(0, pc1.length()/2);
         r2 = pc1.substring(pc1.length()/2);
         
-        String rs1, rs2 = "";
+        String rs1, rs2;
         rs1 = r1.substring(0, lugares);
         r1 = r1.substring(lugares) + rs1;
         rs2 = r2.substring(0, lugares);
