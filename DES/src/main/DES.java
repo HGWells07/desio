@@ -5,9 +5,11 @@
  */
 package main;
 
+import des.Captura;
 import des.Llaves;
 import des.Permutar;
 import des.XOR;
+import des.SCaja;
 import generico.ConverHex;
 import java.util.Scanner;
 
@@ -22,12 +24,22 @@ public class DES {
      */
     public static void main(String[] args) {
         
-        Llaves d = new Llaves();
+        Captura c = new Captura();
+        c.capturar();
         
-        System.out.println("Ingrese una clave: ");
+        /*System.out.println("Ingrese una clave: ");
         Scanner s = new Scanner(System.in);
         String clave = s.next();
         d.generarLlaves(clave);
+        
+        Llaves d = new Llaves();
+        
+        ConverHex c = new ConverHex();
+        
+        SCaja s = new SCaja();
+        
+        
+        */
     }
     
 }

@@ -79,7 +79,7 @@ public class Permutar {
         return permutar(dato, this.IP);
     }
     
-    public String Expantion(String dato){
+    public String expantion(String dato){
         return permutar(dato, this.E);
     }
     

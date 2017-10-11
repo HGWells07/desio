@@ -20,6 +20,32 @@ public class ConverHex {
         String value = new BigInteger(hex, 16).toString(2);
         return String.format("%64s", value).replace(" ", "0");
     }
+    
+    public String binAHexBig(String bin){
+        BigInteger b = new BigInteger(bin, 2);
+        return b.toString(16);
+    }
+    
+    public String binarioAHexadecimal(String bin){
+        /*
+        BigInteger b = new BigInteger(s, 2);
+        b.toString(16);
+        */
+        int decimal = Integer.parseInt(bin,2);
+        return Integer.toString(decimal,16);
+    }
+    
+    public String decimalABinario(String dec){
+        return Integer.toBinaryString(Integer.parseInt(dec));
+    }
+    
+    public String decimalABinario(int dec){
+        return String.format("%4s", Integer.toBinaryString(dec)).replace(' ', '0');
+    }
+    
+    public int binarioADecimal(String bin){
+        return Integer.parseInt(bin, 2);
+    }
 }
 
 /*

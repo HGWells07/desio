@@ -12,7 +12,7 @@ public class Llaves {
     
     Permutar p = new Permutar();
     
-    private final int recorrimiento[]=
+    public final int recorrimiento[]=
     {
       1, 1, 2, 2, 2, 2, 2, 2, 1, 2, 2, 2, 2, 2, 2, 1  
     };
